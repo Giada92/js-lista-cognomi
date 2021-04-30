@@ -22,11 +22,19 @@ console.log("Dopo aver fatto il push ", cognomi);
 cognomi.sort();
 console.log("Ordine alfabetico ", cognomi);
 
-for (var i = 0; i < cognomi.length; i++) {
-    console.log(cognomi[i]);
 
+
+for (var i = 0; i < cognomi.length; i++) {
+    //console.log(cognomi[i]);
+    //console.log(i + 1);
+
+    //scrivere la posizione umana della lista partendo da 1
+    var lista = i + 1;
+    //console.log(lista);
+    lista += cognomi[i];
+    console.log(lista);
+
+    //Stampare in pagina la lista
     //var provvisoria = document.getElementById("lista_cognomi").innerHTML;
     document.getElementById("lista_cognomi").innerHTML += "<li> " + cognomi[i] + " </li>";
 }
-
-
